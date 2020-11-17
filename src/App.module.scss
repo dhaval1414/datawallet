@@ -1,0 +1,45 @@
+@import './styles/variables';
+
+.app {
+    // for sticky footer no matter the height of viewport
+    display: flex;
+    min-height: calc(100vh - #{$page-frame});
+    flex-direction: column;
+    animation: fadeIn 0.2s ease-out;
+}
+.navbar {
+    flex: 1;
+}
+.networkbar {
+    flex: 4;
+}
+.content {
+    margin-left: $appWidth * 0.15;
+    flex: 4;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 100%;
+    position: relative;
+    max-width: 32rem;
+    margin-top: 120px;
+    flex: 1;
+    padding: 0;
+}
+
+.defaultLabel {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

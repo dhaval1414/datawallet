@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "DataWallet",
+  "description": "This extension is unofficial extension to manage data using data tokens",
+  "icons": {
+    "512": "datawallet512.png",
+    "128": "datawallet128.png",
+    "16": "datawallet16.png",
+    "48": "datawallet48.png"
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Click to activate DataWallet",
+    "default_icon": {
+      "16": "datawallet16.png",
+      "48": "datawallet48.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "42.0"
+    }
+  },
+  "developer": {
+    "name": "Dhaval Kalavadiya",
+    "url": "http://oceanprotocol.com"
+  },
+  "permissions": ["http://*/", "https://*/", "webNavigation"],
+  "content_security_policy": "default-src 'self' https://*.oceanprotocol.com 'sha256-hsQVIVNKG3pocCYi0/+AXJCf5SErJNT8L6rpR04al9s='; script-src 'self' 'sha256-3QJvbeRijb/6uI0OWQ1RnM+LdXaYLTEWeCYOMMFYhYo='; font-src 'self' data: 'sha256-3QJvbeRijb/6uI0OWQ1RnM+LdXaYLTEWeCYOMMFYhYo='"
+}

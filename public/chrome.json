@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "DataWallet",
+  "description": "This extension is unofficial extension to manage data using data tokens",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Click to activate Jellyfish"
+  },
+  "icons": {
+    "16": "datawallet16.png",
+    "48": "datawallet48.png",
+    "128": "datawallet128.png"
+  },
+  "permissions": ["tabs", "notifications", "http://*/", "https://*/"],
+  "content_security_policy": "default-src 'self' https://*.oceanprotocol.com 'sha256-hsQVIVNKG3pocCYi0/+AXJCf5SErJNT8L6rpR04al9s='; script-src 'self' 'sha256-3QJvbeRijb/6uI0OWQ1RnM+LdXaYLTEWeCYOMMFYhYo='; font-src 'self' data: 'sha256-3QJvbeRijb/6uI0OWQ1RnM+LdXaYLTEWeCYOMMFYhYo='"
+}

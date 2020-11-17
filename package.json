@@ -1,0 +1,59 @@
+{
+  "name": "data-wallet-extension",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Cross browser extension to search and manage data assets using Ocean Protocol",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "firefox": "npm run build && rm -rf build/manifest.json && cp build/firefox.json build/manifest.json",
+    "chrome": "npm run build && rm -rf build/manifest.json && cp build/chrome.json build/manifest.json",
+    "brave": "npm run build && rm -rf build/manifest.json && cp build/chrome.json build/manifest.json",
+    "test": "npm run lint && react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier ./src/**/*.{js,jsx,json} --write",
+    "lint": "eslint ./src/**/*.js",
+    "prod": "npm run build && serve -s build/"
+  },
+  "dependencies": {
+    "@oceanprotocol/art": "^2.2.0",
+    "@oceanprotocol/contracts": "^0.4.2",
+    "@oceanprotocol/lib": "^0.2.5",
+    "@oceanprotocol/typographies": "^0.1.0",
+    "cheeseburger-menu": "0.0.13",
+    "classnames": "^2.2.6",
+    "ethereum-address": "0.0.4",
+    "ethers": "^5.0.12",
+    "json-prune": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dotdotdot": "^1.3.1",
+    "react-hamburger-menu": "^1.2.1"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "eslint-config-oceanprotocol": "^1.5.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.13.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^1.17.1",
+    "react-scripts": "^3.4.3",
+    "typescript": "^3.4.5",
+    "web-ext": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "dkdev14",
+  "license": "Apache 2.0",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
